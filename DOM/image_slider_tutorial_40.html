@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Button onclick="prev()">Previous</Button>
+    <img id="sider_image" src="images/ruhul.jpg" style="height: 300px; width:300px;" alt="image" />
+    <button onclick="next()">Next</button>
+
+
+    <script>
+        var photos = ["images/ruhul.jpg","images/arafat.jpg","images/3.jpg"];
+        var sider_img = document.getElementById("sider_image");
+        var count = 0;
+        function next()
+        {
+            count++;
+            if(count >= photos.length)
+            {
+                count = 0;
+                sider_img.src = photos[count];
+            }
+            else
+            {
+                sider_img.src = photos[count];
+            }
+        }
+        function prev()
+        {
+            count--;
+            if(count < 0)
+            {
+                count = photos.length - 1;
+                sider_img.src = photos[count];
+            }
+            else
+            {
+                sider_img.src = photos[count];
+            }
+        }
+    </script>
+</body>
+</html>
