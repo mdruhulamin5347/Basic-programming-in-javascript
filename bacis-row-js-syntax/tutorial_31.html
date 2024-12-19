@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var students = {
+            name : "Md.Ruhul AMin",
+            roll : 534793,
+            marks : 93,
+            lang :  ['python','c','c++','javascript']
+        }
+        var students1 = {
+            name : "Md.Arafat",
+            roll : 534792,
+            marks : 98,
+            lang :  ['python','c','c++','javascript']
+        }
+        document.write(students1.name);
+        */
+
+        function Student(name,roll,marks,lang){
+            this.name = name,
+            this.roll = roll,
+            this.marks = marks,
+            this.lang = lang
+            this.display = function(){
+                document.write(this.name),
+                document.write(this.roll),
+                document.write(this.marks),
+                document.write(this.lang)
+            }
+        }
+        var students = new Student("Md.Ruhul AMin",534793,93,['python','c','c++','javascript']);
+        var students2 = new Student("Md.Arafat",534792,99,['python','c','c++']);
+        students.display();
+        students2.display();
+    </script>
+</body>
+</html>

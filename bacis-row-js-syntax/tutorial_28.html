@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names = ['Md.Ruhul','Sadiya','Fuyad','Masum'];
+        console.log(names);
+        names.pop();
+        console.log(names);
+        names.push("Maliha");
+        console.log(names);
+        names.shift();
+        console.log(names);
+        names.unshift("Habiba Holy");
+        console.log(names);
+        names.splice(1,0,"Tanvir");
+        console.log(names);
+        var name = names.slice(1);
+        console.log(name);
+        console.log(names);
+        names.sort()
+        console.log(names);
+        names.reverse();
+        console.log(names);
+
+        var numbers = [2,4,7,4,8,5,2,4,9];
+        function st(a,b){
+            return b-a;
+        }
+        numbers.sort(st);
+        console.log(numbers);
+        
+    </script>
+</body>
+</html>

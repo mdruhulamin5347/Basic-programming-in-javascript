@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // immediatte function call IIF
+        (function addition(num1 , num2){
+            document.write( num1 + num2 +"<br/>");
+        })(45,5);
+        
+
+        // function expressioin 
+        var result = function sub(num1,num2){
+            return num1 - num2;
+        }
+        document.write(result(3,5));
+    </script>
+</body>
+</html>

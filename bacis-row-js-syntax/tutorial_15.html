@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mark = parseInt(prompt("Enter your number: "));
+        if(80 <= mark && mark <=100)
+            document.write("A+");
+        else if(70 <= mark && mark <=79)
+            document.write("A");
+        else if(60 <= mark && mark <=69)
+            document.write("B");
+        else if(50 <=mark && mark <=59)
+            document.write("C");
+        else if(40 <=mark && mark <49)
+            document.write("D");
+        else if(0 <= mark && mark <= 39)
+            document.write("F");
+        else
+            document.write("wrong input number");
+    </script>
+</body>
+</html>

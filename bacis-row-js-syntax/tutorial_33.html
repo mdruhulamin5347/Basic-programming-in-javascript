@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rightchoice = 0;
+        var wrongchoice = 0;
+        for(var i=0; i<5; i++)
+        {
+            var choice = parseInt(prompt("Enter Your Number: "))
+            var ran = Math.floor(Math.random() * 5 + 1);
+            if(choice == ran)
+            {
+                console.log("Your are Won");
+                rightchoice++;
+            }
+            else
+            {
+                console.log("Currect Number is: ", ran);
+                wrongchoice++;
+            }
+        }
+        document.write("You Are won: ", rightchoice,"<br/>");
+        document.write("You are loss: ",wrongchoice);
+    </script>
+</body>
+</html>

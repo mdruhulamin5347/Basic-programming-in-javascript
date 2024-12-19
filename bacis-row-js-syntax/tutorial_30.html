@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function highestMark(students){
+            var highScore = students[0][1];
+            var highScorer = students[0][0];
+            for(var i=1; i<students.length; i++)
+            {
+                if(highScore < students[i][1])
+                {         
+                    highScorer = students[i][0];
+                }
+            }
+            return highScorer;
+        }
+        var students = [
+            ['Md.Ruhul',95],
+            ['Md.Arafat',74],
+            ['Sadiya',98],
+            ['Tanvir',90]
+        ]
+        var result = highestMark(students);
+        console.log(result);
+    </script>
+</body>
+</html>
