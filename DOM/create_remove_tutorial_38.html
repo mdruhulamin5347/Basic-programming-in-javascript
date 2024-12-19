@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div">
+        <h1>Hello Md.Ruhul Amin</h1>
+        <h1>Hello Md.Arafat</h1>
+
+    </div>
+
+
+    <script>
+        // find
+        var headding1 = document.getElementsByTagName("h1")[0];
+        var div_tag = document.getElementById("my-div");
+
+        // create
+        var newHeadding = document.createElement("h1");
+        var newText = document.createTextNode("Hi I am backend Developer");
+        newHeadding.appendChild(newText);
+        div_tag.appendChild(newHeadding);
+
+        //div_tag.insertBefore(newHeadding,headding1);
+        
+        // remove
+        div_tag.removeChild(headding1);
+    </script>
+</body>
+</html>
