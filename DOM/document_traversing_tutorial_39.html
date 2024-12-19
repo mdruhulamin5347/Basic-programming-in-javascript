@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li> <a href="">home</a> </li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+    </ul>
+
+    <script>
+        var ul_list = document.querySelector("ul");
+        var first_li = ul_list.querySelector("li");
+
+        // downwards
+        first_li.style.listStyle = "none";
+        var second_li = ul_list.children[1];
+        second_li.style.listStyle = "none";
+
+        //Upwards
+        var child_name = second_li.parentElement("second_li"); 
+
+        //sideways
+        var side = first_li.nextElementSibling;
+       
+    </script>
+</body>
+</html>
