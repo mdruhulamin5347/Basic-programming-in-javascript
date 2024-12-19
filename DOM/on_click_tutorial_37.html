@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ruhulPicture()" >Ruhul</button>
+    <button onclick="arafatPicture()" >Arafat</button>
+    <br>
+    <img id="image_id" style="height:300px; width: 300px;" src="ruhul.jpg"  alt="image"/>
+    <br>
+    <button onclick="ruhulInfo()">Ruhul</button>
+    <button onclick="arafatInfo()">Arafat</button>
+    <h3 id="info"></h3>
+    
+    
+    <script>
+        var picture = document.getElementById("image_id");
+        function ruhulPicture()
+        {
+            picture.src = "ruhul.jpg";
+        }
+        function arafatPicture()
+        {
+            picture.src = "arafat.jpg";
+        }
+        var infoV = document.getElementById("info");
+        function ruhulInfo()
+        {
+            infoV.innerHTML = "I am Md.Ruhul Amin, a web backend developer.";
+        }
+        function arafatInfo()
+        {
+            infoV.innerHTML = "I am Md. Arafat. This is my nickname in my village.";
+        }
+
+    </script>
+</body>
+</html>
